@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Table with Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .search-box {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .search-box input {
+            padding: 10px;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        table {
+            width: 80%;
+            margin: 50px auto;
+            border-collapse: collapse;
+            box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+        }
+        th, td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+
+<div class="search-box">
+    <input type="text" placeholder="검색어를 입력하세요...">
+</div>
+
+<h2 style="text-align:center;">상품 내역</h2>
+<table>
+    <thead>
+        <tr>
+            <th>상품명</th>
+            <th>단가</th>
+            <th>수량</th>
+            <th>금액</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>성수블렌드스페셜티1kg</td>
+            <td>18,980</td>
+            <td>2</td>
+            <td>37,960</td>
+        </tr>
+        <tr>
+            <td>성수블렌드다크오리지널1kg</td>
+            <td>12,980</td>
+            <td>2</td>
+            <td>25,960</td>
+        </tr>
+        <tr>
+            <td>성수블렌드미디엄블렌드1kg</td>
+            <td>15,980</td>
+            <td>1</td>
+            <td>15,980</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2 style="text-align:center;">결제 내역</h2>
+<table>
+    <thead>
+        <tr>
+            <th>총 품목 수량</th>
+            <th>과세 물품</th>
+            <th>부가세</th>
+            <th>합계</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>3</td>
+            <td>72,636</td>
+            <td>7,264</td>
+            <td>79,900</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2 style="text-align:center;">결제 정보</h2>
+<table>
+    <thead>
+        <tr>
+            <th>결제 대상 금액</th>
+            <th>결제 방식</th>
+            <th>카드 번호</th>
+            <th>일시불 금액</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>79,900</td>
+            <td>현대 카드결제(IC)</td>
+            <td>40329380**472*/00789624</td>
+            <td>79,900</td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
